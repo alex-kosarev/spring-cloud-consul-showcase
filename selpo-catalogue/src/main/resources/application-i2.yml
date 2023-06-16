@@ -1,0 +1,13 @@
+spring:
+  config:
+    import: 'consul:'
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      discovery:
+        instance-id: selpo-cat-i2
+        acl-token: a3cb22da-ca4f-e804-950d-98425b6d0ada
+      config:
+        format: YAML
+        acl-token: a3cb22da-ca4f-e804-950d-98425b6d0ada

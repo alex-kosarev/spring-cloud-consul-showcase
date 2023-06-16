@@ -1,0 +1,17 @@
+spring:
+  config:
+    import: 'consul:'
+  application:
+    name: selpo-op
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      discovery:
+        instance-id: selpo-op-i1
+        acl-token: 3c5d6045-9a19-9991-63ef-8c31094fe3ba
+      config:
+        acl-token: 3c5d6045-9a19-9991-63ef-8c31094fe3ba
+  sql:
+    init:
+      mode: never # изменить на always при первом запуске

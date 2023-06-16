@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: selpo-cat
+  sql:
+    init:
+      mode: never # изменить на always при первом запуске
+server:
+  port: 0
